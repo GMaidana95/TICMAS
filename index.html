@@ -8,37 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2285f1ab49.js" crossorigin="anonymous"></script>
     <title>Rene Brown</title>
 </head>
 <body>
     <div class="nav">
         <nav class="nav-main">
             <div class="logo-rene-brown">
-                <img src="img/RBlogo.jpg" alt="CV Logo" class="nav-logo">
+                <a href=""><img src="img/RBlogo.jpg" alt="CV Logo" class="nav-logo"></a>
             </div>
 
             <ul class="nav-menu">
                 <li>
-                    <a href="">Rene Brown</a>
+                    <a href="#quien-soy">Rene Brown</a>
                 </li>
 
                 <li>
-                    <a href="">Experiencia</a>
+                    <a href="#experiencia">Experiencia</a>
                 </li>
 
                 <li>
-                    <a href="">Estudios</a>
+                    <a href="#estudios">Estudios</a>
                 </li>
 
                 <li>
-                    <a href="">Contacto</a>
+                    <a href="#contacto">Contacto</a>
                 </li>
             </ul>
 
             <ul class="idioma">
-                <li>
-                    
-                </li>
+                <li><i class="icon fa fa-language"></i><a href="">En</a></li>
             </ul>
         </nav>
     </div>
@@ -57,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="sobre-mi">
+            <div id="quien-soy" class="sobre-mi">
                 <div class="sobre-mi-img">
                     <img src="img/AboutMe.jpg" alt="Cuaderno y taza">
                 </div>
@@ -65,57 +64,72 @@
                 <div class="texto-sobre-mi">
                     <h2>Quien soy</h2>
                     <br>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nihil vitae unde, distinctio tenetur dolores doloremque. Eum doloremque quasi esse molestiae, necessitatibus sunt voluptas, ducimus facilis at vel natus suscipit!</p>
+                    <p>Soy Rene Brown, programador web estadounidense. Soy profesor a distancia de programacion en una escuela de programacion, pero en mis tiempos libre aprovecho para alimentarme de nuevos conocimientos referidos a este espacio. Mi objetivo es ayudar a las personas a obtener respuestas a sus preguntas y a comunicarse de manera más efectiva a través del lenguaje.</p>
                 </div>
                 
             </div>
 
-            <div class="experiencia">
+            <div id="experiencia" class="experiencia">
                 <div class="timeline">
                     <div class="container left">
                       <div class="date">2015 - 2017</div>
-                      <i class="icon fa fa-home"></i>
+                      <i class="icon fa fa-search"></i>
                       <div class="content">
-                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <h2>Data Analyst Junior</h2>
                         <p>
-                          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            Conocimientos y experiencia en la construcción de dashboards en Power BI.
+                            Conocimientos en la generación de consultas SQL.
                         </p>
                       </div>
                     </div>
                     <div class="container right">
-                      <div class="date">2017 - 2020</div>
-                      <i class="icon fa fa-gift"></i>
+                      <div class="date">2017 - 2022</div>
+                      <i class="icon fa fa-code"></i>
                       <div class="content">
-                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <h2>Full Stack Developer SSr</h2>
                         <p>
-                          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                        Experiencia en PHP y JavaScript.
+                        Conocimientos en AngularJS, Angular, React, Laravel.
+                        Experiencia en desarrollo de software en uno o más lenguajes de alto nivel.
                         </p>
                       </div>
                     </div>
                     <div class="container left">
-                      <div class="date">2020 - 2023</div>
-                      <i class="icon fa fa-user"></i>
+                      <div class="date">2022 - 2023</div>
+                      <i class="icon fa fa-book"></i>
                       <div class="content">
-                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <h2>Profesor de Angular</h2>
                         <p>
-                          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                            Ssr avanzado en uso del Framework Angular.
+                            Experiencia en uso de otros frameworks como AngularJS, VueJS y librería ReactJS.
+                            Experiencia docente individual y en grupo.
+                            Uso de la plataforma NodeJS.
+                            Estructura y uso del Framework Angular.
                         </p>
                       </div>
                     </div>
                   </div>
             </div>
 
-            <div class="estudios">
-                <h2>Estudios</h2>
+            <div id="estudios" class="estudios">
+                <div class="estudios-principal">
+                    <h2>Estudios</h2>
+                    <img src="img/Estudios.jpg" alt="">
+                </div>
                 <div class="secundaria">
                     <h3>2008-2012</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisici</p>
+                    <p><b>Escuela Secundaria N°10:</b></p>
+                    <br>
+                    <p>Tecnico informatico</p>
                 </div>
                 <div class="universidad">
                     <h3>2013-2019</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisici</p>
+                    <p><b>Universidad Tecnologica:</b></p>
+                    <br>
+                    <p>Ingeniero en Sistemas</p>
                 </div>
                 <div class="otros">
+                    <h3>Cursos certificados:</h3>
                     <ul>
                         <li>Desarrollador Front-End</li>
                         <li>Data Analyst</li>
@@ -124,7 +138,11 @@
                 </div>
             </div>
 
-            <div class="contacto">
+            
+        </header>
+
+        <footer>
+            <div id="contacto" class="contacto">
                 <h2>Contacto</h2>
                 <br>
                 <p>Contactame a traves de mis redes sociales</p>
@@ -140,7 +158,7 @@
                     </a>
                 </div>
                 <div class="formulario-contacto">
-                    <p>Enviame un mail</p>
+                    <p>Enviame un mail:</p>
                     <form action="/forms">
                             <input type="text" placeholder="Ingrese su nombre" required=””>
                             <input type="mail" placeholder="Ingrese su email" required=””>
@@ -149,7 +167,10 @@
                     </form>
                 </div>
             </div>
-        </header>
+        </footer>
     </div>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+    
 </body>
 </html>

@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-    
+  scroll-behavior: smooth;
 }
 
 
@@ -11,16 +11,23 @@ a {
     color: #ffffff;
     text-decoration: none;
   }
+
+i {
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+
   
-ul {
+.nav ul {
     list-style: none;
   }
   
   /* Navigation */
 .nav {
     background-color: #1e1e1e;
-    position: -webkit-sticky;
     position: sticky;
+    width: auto;
     top: 0;
     z-index: 2;
 }
@@ -62,25 +69,29 @@ ul {
 
 .header-inicio {
     background-color: #2A2523;
-    height: 920px;
-    display: flex;
+    display: grid;
+    grid-template: 100% 100% / auto auto auto;
     justify-content: center;
     align-items: center;
     font-size: 50px;
     position: relative;
 }
 
+.nombre-inicio {
+  text-align: center;
+}
+
+
 
 .foto-inicio img {
-    border-radius: 20px;
-    flex: 1;
-    margin-left: 20px;
-    height: 100%;
+  border-radius: 20px;
+  margin-left: 20px;
+  height: 100%;
 }
 
 .profesion-inicio {
-    display: flex;
-    margin-top: 200px;
+  margin-top: 200px;
+  text-align: center;
 }
 
 
@@ -90,15 +101,12 @@ ul {
     position: relative;
     font-size: 25px;
     background-color: #B2B4B8;
-    height: 920px;
     display: grid;
-    grid-template:
-        "a b" 100%
-        "a b" ;
+    grid-template: 100% 100% / auto auto ;
 }
 
 .sobre-mi img {
-    height: 100%;
+    object-fit: fill;
     border-radius: 20px;
 }
 
@@ -122,6 +130,7 @@ ul {
 
 .experiencia {
     background-color: #67554C;
+    width: auto;
 }
 
 .timeline {
@@ -311,12 +320,115 @@ ul {
 .estudios {
     position: relative;
     background-color: #968A84;
-    height: 920px;
+    display: grid;
+    grid-template: 50% 50% / auto auto ;
+}
+
+.estudios h2 {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.estudios-principal {
+  margin-left: 20px;
+}
+
+.estudios-principal img {
+  border-radius: 20px;
+}
+
+.secundaria {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.universidad {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.otros {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.estudios h3, li {
+  padding: 25px;
 }
 
 /* Contacto */
 
-.contacto {
+footer {
     position: relative;
-    background-color: aquamarine;
+    background-color: #2E2C2F;
+    height: 200px;
+}
+
+.contacto {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+.formulario-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  margin: 0 30px;
+}
+
+.links a i {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 1290px) {
+
+  .nav {
+    width: 1290px;
+  }
+
+  .header {
+    width: 1290px;
+  }
+
+  .header-inicio {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .foto-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .estudios {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  
+
+  
+
+
+  
+
 }
